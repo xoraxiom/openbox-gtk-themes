@@ -1,0 +1,23 @@
+/*Toolbar*/
+
+/* Background */
+.primary-toolbar .toolbar,
+.primary-toolbar.toolbar {
+    background-color: @theme_bg_color;
+    background-image: linear-gradient(to top,
+                                     shade(@theme_bg_color, 0.95),
+                                     shade(@theme_bg_color, 1.02));
+    box-shadow: none;
+    border-width: 0 0 1px 0;
+    border-bottom-color: shade(@theme_bg_color, 0.9);
+}
+
+.primary-toolbar .toolbar:backdrop,
+.primary-toolbar.toolbar:backdrop {
+    background-image: none;
+    background-color: @theme_bg_color;
+    box-shadow: none;
+    border-width: 0;
+    border-width: 0 0 1px 0;
+    border-bottom-color: shade(@theme_bg_color, 0.95);
+}

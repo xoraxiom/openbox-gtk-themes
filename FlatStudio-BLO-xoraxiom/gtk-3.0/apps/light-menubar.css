@@ -1,0 +1,20 @@
+/* Light Menubar */
+.menubar {
+    background-image: linear-gradient(to top,
+                                      #a2a2a2 1px,
+                                      #ffffff 2px,
+                                      #bfbfbf 1px,
+                                      #d3d3d3);
+}
+
+.menubar:backdrop {
+    background-image: linear-gradient(to top,
+                                      #b2b2b2 1px,
+                                      #d9d9d9 1px,
+                                      #d9d9d9,
+                                      #d3d3d3);
+}
+
+.contacts-left-toolbar.toolbar.menubar {
+    border-width: 0;
+}

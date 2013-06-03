@@ -1,0 +1,45 @@
+/* Fallback Mode Panel */
+PanelWidget:backdrop,
+PanelApplet:backdrop,
+PanelToplevel:backdrop,
+PanelWidget,
+PanelApplet,
+PanelToplevel,
+PanelApplet:backdrop,
+PanelApplet,
+PanelSeparator:backdrop,
+PanelSeparator,
+PanelMenuBar.menubar:backdrop,
+.gnome-panel-menu-bar:backdrop,
+PanelApplet > GtkMenuBar.menubar:backdrop,
+PanelApplet > GtkMenuBar.menubar.menuitem:backdrop,
+PanelMenuBar.menubar:backdrop,
+PanelMenuBar.menubar.menuitem:backdrop,
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem,
+PanelAppletFrame,
+WnckPager, WnckTasklist,
+ClockBox,
+PanelApplet .button:active,
+PanelApplet .button:backdrop,
+PanelApplet .button {
+    -GtkButton-inner-border: 0;
+    background-image: none;
+    background-color: #000;
+    border-width: 0px;
+    border-style: none;
+    border-image: none;
+    border-radius: 0px;
+    text-shadow: none;
+
+
+}
+
+PanelApplet .button:prelight,
+PanelApplet .button:prelight:active {
+    background-image: none;
+    background-color: #0077c0;
+}

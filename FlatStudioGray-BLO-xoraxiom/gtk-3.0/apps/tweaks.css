@@ -1,0 +1,93 @@
+/* TWEAKS */
+
+* { -GtkMenu-vertical-padding: 2;} /* don't choose a menu item after its opening */
+
+/* Scrolled window */
+GtkScrolledWindow.frame,
+GtkScrolledWindow.frame:backdrop {
+    border-radius: 0;
+}
+
+GtkTreeMenu .menuitem {
+    border-width: 0;
+}
+
+/*Tab*/
+.notebook tab,
+.notebook tab.top,
+.notebook tab.bottom {
+    background-image: none;
+    background-color: @theme_base_color;
+}
+
+.notebook tab:backdrop,
+.notebook tab.top:backdrop,
+.notebook tab.bottom:backdrop {
+    background-image: none;
+    background-color: @theme_unfocused_base_color;
+}
+
+/*Progressbar*/
+.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focus,
+.progressbar.vertical {
+    color: @theme_fg_color;
+    background-image: linear-gradient(to top,
+                                     shade(@progressbar_background_b, 1.2),
+                                     shade(@progressbar_background_b, 1.5));
+    border: 1px solid shade(@progressbar_background_b, 1.2);
+    border-image: none;
+    box-shadow: none;
+    -adwaita-progressbar-pattern: none;
+    text-shadow: rgba(255,255,255,0.2) 0 1px;
+}
+
+.progressbar.vertical {
+    background-image: linear-gradient(to left,
+                                     shade(@progressbar_background_b, 1.2),
+                                     shade(@progressbar_background_b, 1.5));
+}
+
+.progressbar:backdrop,
+.progressbar row:backdrop,
+.progressbar row:selected:backdrop,
+.progressbar.vertical:backdrop,
+.progressbar.vertical row:backdrop,
+.progressbar.vertical row:selected:backdrop {
+    -adwaita-progressbar-pattern: none;
+    background-image: none;
+    background-color: @progressbar_unfocused_background;
+    border-color: @progressbar_unfocused_border;
+    box-shadow: none;
+}
+
+.trough row,
+.trough row:hover,
+.trough row:selected,
+.trough row:selected:focus {
+    color: @theme_fg_color;
+    background-image: linear-gradient(to top,
+                                     shade(@theme_bg_color, 1.0),
+                                     shade(@theme_bg_color, 0.95));
+    box-shadow: inset 1px 1px shade(@theme_bg_color, 0.85);
+    text-shadow: rgba(255,255,255,0.2) 0 1px;
+    border: 1px solid shade(@theme_bg_color, 0.7);
+}
+
+GtkProgressBar:backdrop,
+GtkProgressBar.vertical:backdrop,
+.trough row:backdrop,
+.trough.vertical row:backdrop {
+    background-image: none;
+    background-color: @unfocused_dark_bg;
+}
+
+.trough,
+.trough.vertical {
+    background-image: none;
+    background: shade (@theme_bg_color, 0.93);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.2);
+}
