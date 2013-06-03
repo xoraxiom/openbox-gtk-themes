@@ -172,19 +172,19 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 # Various Standard Widgets
 
 style "murrine-button" = "murrine-wider" {
-	bg[NORMAL] = shade (1.08, @bg_color)
-	bg[PRELIGHT] = shade (1.10, @bg_color)
-	bg[ACTIVE] = shade (0.95, @bg_color)
-	bg[INSENSITIVE] = shade (0.85, @bg_color)
+	bg[NORMAL] = shade (1.25, @bg_color)
+	bg[PRELIGHT] = shade (0.8, @bg_color)
+	bg[ACTIVE] = shade (0.6, @bg_color)
+	bg[INSENSITIVE] = shade (0.9, @bg_color)
 
   	engine "murrine" {
 	}
 }
 
 style "murrine-scrollbar" {
-	bg[NORMAL] = shade (0.90, @bg_color)
-	bg[PRELIGHT] = shade (0.80, @bg_color)
-	bg[ACTIVE] = @selected_bg_color
+	bg[NORMAL] = shade (0.45, @bg_color)
+	bg[PRELIGHT] = shade (0.45, @bg_color)
+	bg[ACTIVE] = shade (0.8,@selected_bg_color)
 
 	engine "murrine" {
 		roundness = 0
@@ -195,11 +195,11 @@ style "murrine-scrollbar" {
 }
 
 style "murrine-overlay-scrollbar" {
-	bg[ACTIVE] = shade (0.8, @bg_color)
-	bg[INSENSITIVE] = shade (0.97, @bg_color)
+	bg[ACTIVE] = shade (0.2, @bg_color)
+	bg[INSENSITIVE] = shade (0.03, @bg_color)
 
-	base[SELECTED] = shade (0.6, @base_color)
-	base[INSENSITIVE] = shade (0.85, @base_color)
+	base[SELECTED] = shade (0.4, @base_color)
+	base[INSENSITIVE] = shade (0.15, @base_color)
 }
 
 style "murrine-scale" = "murrine-default" {
@@ -225,7 +225,7 @@ style "murrine-progressbar" = "murrine-default" {
 	ythickness = 0
 
 	bg[NORMAL] = @bg_color
-	bg[ACTIVE] = shade (1.08, @bg_color)
+	bg[ACTIVE] = shade (1.20, @bg_color)
 
 	fg[PRELIGHT] = @selected_fg_color
 
@@ -395,9 +395,9 @@ style "murrine-menubaritem" {
 style "murrine-toolbar" = "murrine-default" {
 
 	bg[NORMAL] = @toolbar_bg_color
-	bg[PRELIGHT] = shade (1.02, @toolbar_bg_color)
+	bg[PRELIGHT] = shade (0.8, @toolbar_bg_color)
 	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = shade (0.9, @toolbar_bg_color)
+	bg[ACTIVE] = shade (0.6, @toolbar_bg_color)
 	bg[INSENSITIVE] = @toolbar_bg_color
 
 	fg[NORMAL] = @toolbar_fg_color
@@ -412,11 +412,11 @@ style "murrine-toolbar" = "murrine-default" {
 
 style "murrine-toolbutton" = "murrine-button" {
 
-	bg[NORMAL] = shade (1.08, @toolbar_bg_color)
-	bg[PRELIGHT] = shade (1.10, @toolbar_bg_color)
-	bg[SELECTED] = @selected_bg_color
-	bg[ACTIVE] = shade (0.95, @toolbar_bg_color)
-	bg[INSENSITIVE] = shade (0.85, @toolbar_bg_color)
+	bg[NORMAL] = shade (1.10, @toolbar_bg_color)
+	#bg[PRELIGHT] = shade (1.10, @toolbar_bg_color)
+	#bg[SELECTED] = @selected_bg_color
+	#bg[ACTIVE] = shade (0.95, @toolbar_bg_color)
+	#bg[INSENSITIVE] = shade (0.85, @toolbar_bg_color)
 
 	fg[NORMAL] = @toolbar_fg_color
 	fg[PRELIGHT] = @toolbar_fg_color
