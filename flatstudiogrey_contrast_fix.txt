@@ -1,0 +1,18 @@
+--- /usr/share/themes/FlatStudioGray/gtk-2.0/gtkrc      2013-06-02 15:55:38.426895465 +0300
++++ gtkrc       2013-06-02 16:19:57.826911473 +0300
+@@ -607,13 +607,13 @@
+     text[ACTIVE]                    = shade (0.15, @selected_bg_color)  # indicador click
+ 
+     engine "murrine" {
+-        contrast                = 0.00
++        contrast                = 1.00
++        border_shades           = { 1.5, 1.5 }
+         gradient_shades         = {1.00, 1.00, 1.00, 1.00}
+-        lightborderstyle        = 0
++        lightborderstyle        = 1
+         lightborder_shade       = 1.00
+         textstyle               = 0
+         text_shade              = 1.00  
+-
+     }
+ }
